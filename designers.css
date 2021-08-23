@@ -15,9 +15,12 @@
 }
 
 .inner_cards div {
-    
-    width: 25%;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin : 10px;
+    align-items: center;
    
 }
 
@@ -27,7 +30,7 @@
 
 .inner_cards {
     display: flex;
-    flex-direction: row | row-reverse | column | column-reverse;
+    flex-direction: row ;
     align-items: center;
   justify-content: center;
     flex-wrap: wrap;

@@ -6,7 +6,7 @@
 
 .inner_games {
     display: flex;
-    flex-direction: row | row-reverse | column | column-reverse;
+    flex-direction: row;
     align-items: center;
   justify-content: center;
     flex-wrap: wrap;
@@ -14,8 +14,12 @@
 
 .inner_games div {
     
-    width: 25%;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+    margin : 10px;
+    align-items: center;
    
 }
 .games h2 {
