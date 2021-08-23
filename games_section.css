@@ -1,0 +1,37 @@
+.games {
+    font-family: 'Avenir-Next,Roboto,sans-serif';
+    text-align: center;
+    font-size: 16px;
+}
+
+.inner_games {
+    display: flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+    align-items: center;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner_games div {
+    
+    width: 25%;
+    margin: 20px;
+   
+}
+.games h2 {
+    font-size: 45px;
+}
+.inner_games div h4 {
+    font-size: 26px;
+}
+
+.games button {
+    background-color: #4992ca;
+    border: 2px solid #4992ca;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+    color: white;
+}

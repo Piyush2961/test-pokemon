@@ -1,0 +1,22 @@
+.know_more {
+    background-color: #4992ca; text-align: center;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    font-family: 'Avenir-Next,Roboto,sans-serif';
+}
+
+.know_more button {
+    color: white;
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.know_more h2 {
+    font-size: 45px;
+}
