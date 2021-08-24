@@ -14,7 +14,7 @@
 
 .inner {
     display: flex;
-    flex-direction: row | row-reverse | column | column-reverse;
+    flex-direction: row;
     align-items: center;
   justify-content: center;
     flex-wrap: wrap;
