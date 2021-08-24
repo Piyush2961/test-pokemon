@@ -1,0 +1,34 @@
+.stats {
+    text-align: center;
+}
+
+.inner_stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: greenyellow; */
+    
+}
+
+.inner_stats div {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin : 10px;
+    background-color: #fff;
+    
+}
+.inner_stats div p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+.inner_stats div h4 {
+    margin: 0px;
+}

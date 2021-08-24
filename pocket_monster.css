@@ -1,0 +1,22 @@
+.pocket_monster {
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.inner_monster {
+    display: flex;
+    flex-direction: row ;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner_monster div {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin : 10px;
+}
