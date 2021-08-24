@@ -1,94 +1,134 @@
 
-  body {
-    margin: 0px;
-    font-family: 'Avenir-Next,Roboto,sans-serif';
-  }
-  
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color: #4d4d4d;
-    position: relative;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
+* {
+   
+    box-sizing: border-box;
+}
+
+html, body {
+    /* font-size: 62.5%; */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+a {
     text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav > #nav-check {
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+  width: 100%;
+    border-bottom: 1px solid #E2E8F0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.5rem 0 1rem;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.hamburger {
     display: none;
-  }
-  
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
+    height: 30px;
+    /* background-color: yellow; */
+    
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    /* font-weight: 500; */
+    /* color: #482ff7; */
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-menu {
+        position: absolute;
+        top: -1000px;
+        transform: rotate3d(0,0,1,90deg);
+        left: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        
+        text-align: center;
+        transition: 1s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
+
+    .nav-menu.active {
+      top: 23px;
+      transform: rotate3d(0,0,0,0deg);
     }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+   .navbar {
+     padding: 0 1.5rem 0 0;
+   }
+    .nav-item {
+        margin: 1rem 0;
     }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
+
+    .hamburger {
+        display: block;
+        
+        padding: 5px 0;
+        cursor: pointer;
+
     }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(5px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
     }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-5px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
     }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-  }
+}

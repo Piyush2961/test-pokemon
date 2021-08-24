@@ -20,15 +20,13 @@
     <link rel="stylesheet" href="stats.css">
     <link rel="stylesheet" href="pocket_monster.css">
     <link rel="stylesheet" href="qna.css">
+    <link rel="stylesheet" href="overlay.css">
 
     <style>
-      body {
-        font-size: 16px;
-      }
-      * {
-        /* font-family: "Avenir-Next,Roboto,sans-serif"; */
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
+      :root {
+          font-size: 16px;
+          font-family: Avenir-Next,Roboto,sans-serif;
+          }
       h2 {
         font-size: 45px;
       }
@@ -57,36 +55,61 @@
 
   <!-- ------ navbar begins -------  -->
 
-  <nav>
-    
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            <img src="nav_image.png"  alt="">
-          </div>
+  <header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo" style="background-color: yellow; padding: 0; height: 40px;"><img src="nav_image.png" height="102.5%" alt="" class="src"></a>
+        <ul class="nav-menu" >
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #8a8a8a;"> <span style="padding-bottom: -10px;"><img src="flag.png"  height="20px" alt="" ></span> 
+              &nbsp;&nbsp;Pokedex <i class="fas fa-sort-down"></i></a>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #8a8a8a;">Video games <i class="fas fa-sort-down"></i></a>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #8a8a8a;">ECard games</a>
+        </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: #8a8a8a;">Pokemon TV</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: #8a8a8a;">Pokemon Events</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: #8a8a8a;">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: white; background-color: #FF6600;
+                padding-left: 30px; padding-right: 30px; padding-top: 5px; padding-bottom: 5px; ">Apply</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        
-        <div class="nav-links">
-          <a href="//github.io/jo_geek" target="_blank">Github</a>
-          <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-          <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
-        </div>
-      </div>
-
     </nav>
+</header>
 
-    <!-- ------ navbar ends -------  -->
+    <!-- ------ navbar ends ------- 
+ 
+    <!-- ----- overlay begins --  -->
+    
 
+    <section class = "jumbotron">
+      <div class = "overlay">
+      <h1 style="font-size: 90px; word-wrap: break-word;">WELCOME TO EDYST LEARN CODING</h1>
+      <h3 class="main_content">Let's learn web development in a fun way.</h3>
+  
+      <div class="btn-group">
+        <button class="apply_button" href="#">Apply Here</button>
+        <button class="schedule" href="#">Register for course</button>
+        <button class="learnmore" href="#">Here you can learn to build beautiful websites <b>Learn more ❯</b></button>
+      </div>
+  </div>
+    </section>
+
+    <!-- ----- overlay ends --  -->
 
     <!-- ------- Pocket Monsters section begins --  -->
 <section style="text-align: center;
@@ -295,7 +318,7 @@ background-color: #4992ca;">
           </p>
         </div>
          
-       <div style="display: flex; flex-direction: column;">
+       <div style=" max-width: 650px; width: 100%; display: flex; flex-direction: column;">
 
         <div class="table">
           <table style="margin-left: 0px; margin-right: 20px; margin-top: 15px;">
@@ -394,7 +417,8 @@ background-color: #4992ca;">
     <div class="inner_cards_container">
 
       <div class="cards" style="border: 1px solid #8a8a8a;;  border-top:10px solid #4992ca; ">
-            <div style=" border-bottom: 1px solid #8a8a8a;;">
+            <div style=" border-bottom: 1px solid #8a8a8a;
+            background-color: #f1f1f1;">
               <h4 style="font-size: 30px;">Greninja</h4>
             <img src="greninja.png" width="200" alt="">
             <h4 style="font-size: 30px;">Ability: Torrent</h4>
@@ -495,7 +519,7 @@ background-color: #4992ca;">
       <div class="inner_cards_container">
 
         <div class="cards" style="border: 1px solid #8a8a8a;;  border-top:10px solid #4992ca; ">
-              <div style=" border-bottom: 1px solid #8a8a8a;">
+              <div style=" border-bottom: 1px solid #8a8a8a; background-color: #f1f1f1;">
               <h2>First generation</h2>
               <p>(1996-1999)</p>
             </div>
@@ -506,7 +530,7 @@ background-color: #4992ca;">
         </div>
 
         <div class="cards" style="border: 1px solid #8a8a8a;;  border-top:10px solid #4992ca; ">
-              <div style=" border-bottom: 1px solid #8a8a8a;">
+              <div style=" border-bottom: 1px solid #8a8a8a; background-color: #f1f1f1;">
               <h2>Second generation</h2>
               <p>(1999–2002)</p>
             </div>
@@ -517,7 +541,7 @@ background-color: #4992ca;">
         </div>
 
         <div class="cards" style="border: 1px solid #8a8a8a;;  border-top:10px solid #4992ca; ">
-              <div style=" border-bottom: 1px solid #8a8a8a;">
+              <div style=" border-bottom: 1px solid #8a8a8a; background-color: #f1f1f1;">
               <h2>Third generation</h2>
               <p>(2002–2006)</p>
             </div>
@@ -527,7 +551,7 @@ background-color: #4992ca;">
         </div>
 
         <div class="cards" style="border: 1px solid #8a8a8a;;  border-top:10px solid #4992ca; ">
-              <div style=" border-bottom: 1px solid #8a8a8a;">
+              <div style=" border-bottom: 1px solid #8a8a8a; background-color: #f1f1f1;">
               <h2>Fourth generation</h2>
               <p>(2006–2010)</p>
             </div>
@@ -760,5 +784,25 @@ background-color: #4992ca;">
   </footer>
 
    <!-- -------- footer section ends ----  -->
+
+   <script>
+     
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+   </script>
 </body>
 </html>

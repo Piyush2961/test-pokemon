@@ -1,0 +1,62 @@
+.jumbotron {	
+	background: url(overlay.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.overlay {
+  background-color: #000000b3;
+  padding: 50px;
+  padding-top: 5px;
+}
+
+.jumbotron h1 {
+
+	color: white;
+
+}
+
+.jumbotron h3 {
+
+	color: white;
+
+}
+
+.jumbotron button {
+	margin: 15px;
+	padding: 10px;
+
+}
+
+.btn-group {
+	display: flex;
+  flex-direction: column;
+}
+
+.apply_button {
+  background-color: #4992ca;
+  color: #fff;
+  border: none;
+  padding: 10px; 
+  height: 50px;
+  width: 200px;
+}
+
+.schedule {
+  background-color: #ffffff00;
+  color: #fff;
+  height: 60px;
+  border: 2px solid white;
+  width: 200px;
+}
+
+.learnmore {
+  border-radius: 15px;
+  max-width: 400px;
+}
+.learnmore:visited {
+  outline: none;
+}
