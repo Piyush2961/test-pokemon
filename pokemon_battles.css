@@ -1,0 +1,26 @@
+.pokemon_battles {
+    text-align: center;
+}
+
+.inner_pokemon_battles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.inner_pokemon_battles div {
+margin-left: 15px;
+}
+
+.pokemon_battles button {
+    background-color: #4992ca;
+    border: 2px solid #4992ca;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+    color: white;
+    cursor: pointer;
+}
